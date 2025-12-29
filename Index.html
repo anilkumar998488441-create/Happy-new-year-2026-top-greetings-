@@ -1,0 +1,1688 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>नया साल 2026 - उत्सव फॉरवर्ड</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600;700&family=Noto+Sans+Devanagari:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --gold: #FFD700;
+            --bg: #000;
+            --red: #FF3366;
+            --primary: #FF6B6B;
+            --secondary: #4ECDC4;
+            --accent: #FFD166;
+            --dark: #1A1A2E;
+            --light: #F7F9FC;
+            --blue: #3A86FF;
+            --purple: #8338EC;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', 'Noto Sans Devanagari', sans-serif;
+            -webkit-tap-highlight-color: transparent;
+        }
+        
+        body, html {
+            background: linear-gradient(135deg, #1A1A2E 0%, #16213E 100%);
+            color: var(--light);
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            z-index: 10;
+        }
+        
+        /* एड कंटेनर - हेडर के नीचे */
+        .ad-container {
+            width: 100%;
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            margin: 15px 0;
+            padding: 20px;
+            text-align: center;
+            border: 1px dashed rgba(255, 215, 0, 0.3);
+            backdrop-filter: blur(10px);
+            min-height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .ad-text {
+            color: rgba(255, 255, 255, 0.7);
+            font-size: 0.9rem;
+        }
+        
+        /* एड कंटेनर - फुटर के ऊपर */
+        .ad-container-bottom {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        
+        /* हेडर */
+        header {
+            text-align: center;
+            padding: 20px 0 0;
+            position: relative;
+        }
+        
+        .app-title {
+            font-family: 'Playfair Display', serif;
+            font-size: 3.5rem;
+            color: var(--gold);
+            margin-bottom: 5px;
+            text-shadow: 0 0 15px rgba(255, 215, 0, 0.5);
+        }
+        
+        .app-subtitle {
+            font-size: 1.3rem;
+            color: var(--secondary);
+            margin-bottom: 10px;
+        }
+        
+        /* अष्टकोण सर्कल इफेक्ट - मुख्य मैसेज के ऊपर */
+        .magic-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 10px 0 5px;
+            position: relative;
+            z-index: 50;
+            perspective: 1500px;
+        }
+        
+        /* नव वर्ष की हार्दिक शुभकामनाएं - सर्कल के नीचे */
+        .hardik-shubhkamnaye {
+            font-size: 2.4rem;
+            font-weight: 900;
+            color: var(--gold);
+            text-align: center;
+            margin: 20px 0 5px;
+            text-shadow: 0 0 30px var(--gold), 0 0 60px rgba(255, 215, 0, 0.6);
+            animation: heartBeat 1.8s infinite;
+            letter-spacing: 2px;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        @keyframes heartBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+        
+        .magic-box {
+            position: relative; 
+            width: 260px; 
+            height: 260px; 
+            margin: 0 auto 10px;
+            transform-style: preserve-3d;
+            animation: full3DEntry 15s ease-in-out infinite;
+            flex-shrink: 0;
+            z-index: 50;
+        }
+        
+        @keyframes full3DEntry {
+            0% { transform: scale(0.1) rotateY(0deg) translateZ(-800px); opacity: 0; }
+            10% { transform: scale(1) rotateY(0deg) translateZ(0px); opacity: 1; }
+            66% { transform: scale(1) rotateY(0deg) translateZ(0px) rotateZ(0deg); }
+            71% { transform: scale(1) rotateY(360deg) translateZ(0px) rotateZ(720deg); }
+            80% { transform: scale(3.5) rotateY(720deg) translateZ(500px) rotateZ(1080deg); }
+            85% { transform: scale(1) rotateY(360deg) translateZ(0px) rotateZ(720deg); }
+            100% { transform: scale(1) rotateY(360deg) translateZ(0px) rotateZ(1440deg); }
+        }
+        
+        .octagon-wrap { 
+            position: absolute; 
+            inset: 0; 
+            animation: rotateCW 20s linear infinite; 
+            transform-style: preserve-3d;
+        }
+        
+        .square {
+            position: absolute; 
+            inset: 0; 
+            border: 8px solid var(--gold);
+            box-shadow: 0 0 20px var(--gold), 0 0 40px rgba(255, 215, 0, 0.3);
+            animation: pulse 1.5s infinite alternate;
+            transform: translateZ(20px);
+        }
+        
+        .sq2 { 
+            transform: rotate(45deg) translateZ(10px); 
+        }
+        
+        @keyframes rotateCW { 
+            from { transform: rotateZ(0deg); } 
+            to { transform: rotateZ(360deg); } 
+        }
+        
+        @keyframes pulse { 
+            from { 
+                border-color: var(--gold); 
+                box-shadow: 0 0 20px var(--gold); 
+            } 
+            to { 
+                border-color: #fff; 
+                box-shadow: 0 0 40px var(--gold), 0 0 60px rgba(255, 215, 0, 0.5); 
+            } 
+        }
+        
+        .outer-circle { 
+            position: absolute; 
+            inset: -4px; 
+            border: 3.5px solid var(--gold); 
+            border-radius: 50%; 
+            z-index: 5; 
+            transform: translateZ(15px);
+        }
+        
+        .bindi-ring {
+            position: absolute; 
+            inset: 6px; 
+            border: 9px dotted #fff; 
+            border-radius: 50%;
+            animation: rotateACW 12s linear infinite; 
+            z-index: 6;
+            transform: translateZ(5px);
+        }
+        
+        @keyframes rotateACW { 
+            from { transform: translateZ(5px) rotateZ(360deg); } 
+            to { transform: translateZ(5px) rotateZ(0deg); } 
+        }
+        
+        .inner-most-circle {
+            position: absolute; 
+            inset: 22%; 
+            border: 3px solid var(--gold); 
+            border-radius: 50%;
+            background: rgba(255, 215, 0, 0.1);
+            z-index: 3;
+            box-shadow: inset 0 0 15px var(--gold);
+            transform: translateZ(25px);
+        }
+        
+        .heart-content { 
+            position: absolute; 
+            inset: 0; 
+            display: flex; 
+            flex-direction: column; 
+            justify-content: center; 
+            align-items: center; 
+            z-index: 100; 
+            transform-style: preserve-3d;
+        }
+        
+        .big-heart { 
+            font-size: 110px; 
+            color: var(--red); 
+            filter: drop-shadow(0 0 35px var(--red)); 
+            animation: heartBeat 1.2s infinite; 
+            transform: translateZ(30px);
+        }
+        
+        .text-overlay { 
+            position: absolute; 
+            text-align: center; 
+            width: 100%; 
+            top: 55%; 
+            transform: translateY(-50%) translateZ(10px);
+            pointer-events: none; 
+        }
+        
+        .year { 
+            font-size: 2rem; 
+            font-weight: bold; 
+            color: var(--gold); 
+            margin: 0; 
+            text-shadow: 3px 3px 6px #000; 
+        }
+        
+        .sub-text { 
+            font-size: 0.9rem; 
+            color: #fff; 
+            font-weight: bold; 
+            margin-top: -5px; 
+        }
+        
+        .rose { 
+            position: absolute; 
+            font-size: 45px; 
+            z-index: 10; 
+            animation: floatRose 4s ease-in-out infinite;
+            transform: translateZ(5px);
+        }
+        
+        @keyframes floatRose {
+            0%, 100% { transform: translateZ(5px) translateY(0) rotate(0deg); }
+            50% { transform: translateZ(5px) translateY(-20px) rotate(10deg); }
+        }
+        
+        .r1 { top: -35px; left: 50%; transform: translateX(-50%) translateZ(5px); }
+        .r2 { bottom: -35px; left: 50%; transform: translateX(-50%) translateZ(5px); }
+        .r3 { top: 50%; left: -35px; transform: translateY(-50%) translateZ(5px); }
+        .r4 { top: 50%; right: -35px; transform: translateY(-50%) translateZ(5px); }
+        
+        /* मेन ग्रीटिंग कार्ड - एक साथ पूरा दिखे */
+        .greeting-card {
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 25px 20px;
+            margin: 10px auto 20px;
+            max-width: 900px;
+            width: 100%;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            position: relative;
+            overflow: hidden;
+            text-align: center;
+            z-index: 40;
+            min-height: 180px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .greeting-card::-webkit-scrollbar {
+            width: 5px;
+        }
+        
+        .greeting-card::-webkit-scrollbar-track {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+        }
+        
+        .greeting-card::-webkit-scrollbar-thumb {
+            background: var(--gold);
+            border-radius: 10px;
+        }
+        
+        .greeting-card.auto-adjust {
+            padding: 20px 18px;
+            min-height: auto;
+        }
+        
+        .greeting-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent), var(--purple), var(--blue));
+            z-index: 2;
+        }
+        
+        .greeting-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 20%, rgba(255, 215, 0, 0.05) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(255, 107, 107, 0.05) 0%, transparent 50%);
+            z-index: 1;
+        }
+        
+        .main-message {
+            font-size: 1.8rem;
+            line-height: 1.4;
+            margin-bottom: 20px;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+            padding: 0 10px;
+            position: relative;
+            z-index: 3;
+        }
+        
+        .sender-name {
+            font-size: 1.6rem;
+            color: var(--secondary);
+            margin-top: 20px;
+            font-weight: 600;
+            text-shadow: 0 0 10px rgba(78, 205, 196, 0.5);
+            position: relative;
+            z-index: 3;
+        }
+        
+        /* इमोजी डेकोरेशन */
+        .emoji-decoration {
+            position: absolute;
+            font-size: 2rem;
+            z-index: 1;
+            animation: float 6s ease-in-out infinite;
+            filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+        }
+        
+        @keyframes float {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-15px) rotate(10deg); }
+        }
+        
+        /* शेयरिंग ऑप्शन्स */
+        .share-options {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+            margin: 20px 0;
+            position: relative;
+            z-index: 20;
+        }
+        
+        .share-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            background: rgba(255, 255, 255, 0.1);
+            border: none;
+            border-radius: 50px;
+            padding: 12px 25px;
+            color: white;
+            font-size: 1rem;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            min-width: 180px;
+            backdrop-filter: blur(10px);
+            position: relative;
+            overflow: hidden;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .share-btn:hover {
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 25px rgba(0, 0, 0, 0.3);
+        }
+        
+        .share-btn::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+            transition: left 0.5s;
+        }
+        
+        .share-btn:hover::after {
+            left: 100%;
+        }
+        
+        .whatsapp {
+            background: linear-gradient(135deg, #25D366, #128C7E);
+        }
+        
+        .copy-link {
+            background: linear-gradient(135deg, var(--primary), #FF8E53);
+        }
+        
+        .create-new {
+            background: linear-gradient(135deg, var(--secondary), #2E8B86);
+            box-shadow: 0 0 25px rgba(78, 205, 196, 0.8), inset 0 0 15px rgba(255, 255, 255, 0.1);
+            animation: attractPulse 2s infinite alternate, glowRotate 4s linear infinite;
+            position: relative;
+            overflow: visible;
+        }
+        
+        .create-new::before {
+            content: "✨";
+            position: absolute;
+            top: -8px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 1.5rem;
+            animation: sparkleUp 1.5s infinite;
+        }
+        
+        .create-new::after {
+            content: "🎉";
+            position: absolute;
+            bottom: -8px;
+            right: 8px;
+            font-size: 1.2rem;
+            animation: bounceSide 2s infinite;
+        }
+        
+        .create-new:active {
+            transform: scale(0.95);
+        }
+        
+        @keyframes attractPulse {
+            from { box-shadow: 0 0 25px rgba(78, 205, 196, 0.8); }
+            to { box-shadow: 0 0 50px rgba(78, 205, 196, 1); }
+        }
+        
+        @keyframes glowRotate {
+            from { filter: hue-rotate(0deg); }
+            to { filter: hue-rotate(360deg); }
+        }
+        
+        @keyframes sparkleUp {
+            0%, 100% { transform: translateX(-50%) translateY(0) scale(1); opacity: 1; }
+            50% { transform: translateX(-50%) translateY(-15px) scale(1.3); opacity: 0.7; }
+        }
+        
+        @keyframes bounceSide {
+            0%, 100% { transform: translateY(0) rotate(0deg); }
+            50% { transform: translateY(-8px) rotate(10deg); }
+        }
+        
+        .btn-icon {
+            font-size: 1.3rem;
+        }
+        
+        /* क्रिएट ग्रीटिंग सेक्शन */
+        .create-greeting {
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 18px;
+            padding: 25px;
+            margin: 20px 0;
+            display: none;
+            position: relative;
+            z-index: 20;
+            border: 2px dashed rgba(255, 255, 255, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .create-greeting.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        
+        .section-title {
+            font-size: 1.6rem;
+            color: var(--accent);
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: 'Playfair Display', serif;
+        }
+        
+        .form-group {
+            margin-bottom: 18px;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 8px;
+            color: var(--secondary);
+            font-weight: 500;
+            font-size: 1rem;
+        }
+        
+        .form-control {
+            width: 100%;
+            padding: 12px;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 10px;
+            color: white;
+            font-size: 1rem;
+            transition: all 0.3s ease;
+            font-family: 'Noto Sans Devanagari', sans-serif;
+        }
+        
+        .form-control:focus {
+            outline: none;
+            border-color: var(--accent);
+            box-shadow: 0 0 15px rgba(255, 209, 102, 0.3);
+        }
+        
+        /* नया: शायरी/शुभकामना कैटेगरी मेनू */
+        .category-selector {
+            margin: 25px 0;
+        }
+        
+        .category-main {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+        
+        .category-btn {
+            background: rgba(255, 215, 0, 0.15);
+            border: 2px solid var(--gold);
+            border-radius: 50px;
+            padding: 12px 25px;
+            color: var(--gold);
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 1.1rem;
+            min-width: 200px;
+            justify-content: center;
+            backdrop-filter: blur(5px);
+        }
+        
+        .category-btn:hover {
+            background: rgba(255, 215, 0, 0.3);
+            transform: translateY(-3px);
+            box-shadow: 0 10px 20px rgba(255, 215, 0, 0.2);
+        }
+        
+        .category-btn.active {
+            background: var(--gold);
+            color: #000;
+            box-shadow: 0 0 25px var(--gold);
+        }
+        
+        .category-icon {
+            font-size: 1.5rem;
+        }
+        
+        .sub-category {
+            display: none;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+            margin-top: 20px;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .sub-category.active {
+            display: flex;
+        }
+        
+        .sub-category-btn {
+            background: rgba(78, 205, 196, 0.15);
+            border: 2px solid var(--secondary);
+            border-radius: 50px;
+            padding: 10px 20px;
+            color: var(--secondary);
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-size: 0.95rem;
+            min-width: 160px;
+            text-align: center;
+        }
+        
+        .sub-category-btn:hover {
+            background: rgba(78, 205, 196, 0.3);
+            transform: translateY(-2px);
+        }
+        
+        .sub-category-btn.active {
+            background: var(--secondary);
+            color: #000;
+        }
+        
+        .shayari-options {
+            display: none;
+            margin-top: 20px;
+            max-height: 300px;
+            overflow-y: auto;
+            padding: 15px;
+            background: rgba(0, 0, 0, 0.3);
+            border-radius: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        .shayari-options.active {
+            display: block;
+            animation: fadeIn 0.5s ease;
+        }
+        
+        .shayari-item {
+            background: rgba(255, 255, 255, 0.05);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 12px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border-left: 4px solid transparent;
+        }
+        
+        .shayari-item:hover {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 4px solid var(--gold);
+            transform: translateX(5px);
+        }
+        
+        .shayari-text {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: white;
+        }
+        
+        .shayari-emoji {
+            font-size: 1.2rem;
+            margin-right: 8px;
+        }
+        
+        .submit-btn {
+            background: linear-gradient(135deg, var(--accent), #FFB347);
+            color: var(--dark);
+            border: none;
+            border-radius: 50px;
+            padding: 15px 40px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            cursor: pointer;
+            display: block;
+            margin: 25px auto 0;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+            font-family: 'Playfair Display', serif;
+            letter-spacing: 1px;
+            box-shadow: 0 8px 20px rgba(255, 209, 102, 0.2);
+        }
+        
+        .submit-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 12px 25px rgba(255, 209, 102, 0.4);
+        }
+        
+        .submit-btn::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: left 0.7s;
+        }
+        
+        .submit-btn:hover::before {
+            left: 100%;
+        }
+        
+        /* प्रीव्यू सेक्शन */
+        .preview-section {
+            display: none;
+            margin: 30px 0;
+            padding: 25px;
+            background: rgba(255, 255, 255, 0.07);
+            border-radius: 18px;
+            text-align: center;
+            backdrop-filter: blur(10px);
+        }
+        
+        .preview-section.active {
+            display: block;
+        }
+        
+        .preview-card {
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.05));
+            backdrop-filter: blur(15px);
+            border-radius: 20px;
+            padding: 25px;
+            max-width: 800px;
+            margin: 15px auto;
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+            min-height: 180px;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .preview-card.auto-adjust {
+            padding: 20px;
+            min-height: auto;
+        }
+        
+        .preview-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary), var(--secondary), var(--accent), var(--purple), var(--blue));
+            z-index: 2;
+        }
+        
+        .preview-card::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: radial-gradient(circle at 30% 20%, rgba(255, 215, 0, 0.05) 0%, transparent 50%),
+                        radial-gradient(circle at 70% 80%, rgba(255, 107, 107, 0.05) 0%, transparent 50%);
+            z-index: 1;
+        }
+        
+        .preview-message {
+            font-size: 1.8rem;
+            line-height: 1.4;
+            color: white;
+            text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+        }
+        
+        .preview-sender {
+            font-size: 1.6rem;
+            color: var(--secondary);
+            margin-top: 20px;
+            text-shadow: 0 0 10px rgba(78, 205, 196, 0.5);
+        }
+        
+        /* बैकग्राउंड एनिमेशन तत्व */
+        .bg-animation {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+            overflow: hidden;
+            pointer-events: none;
+        }
+        
+        .floating-element {
+            position: absolute;
+            border-radius: 50%;
+            background: rgba(255, 255, 255, 0.03);
+            animation: floatElement 15s infinite linear;
+        }
+        
+        @keyframes floatElement {
+            0% { transform: translateY(0) translateX(0) rotate(0deg); }
+            25% { transform: translateY(-20px) translateX(20px) rotate(90deg); }
+            50% { transform: translateY(0) translateX(40px) rotate(180deg); }
+            75% { transform: translateY(20px) translateX(20px) rotate(270deg); }
+            100% { transform: translateY(0) translateX(0) rotate(360deg); }
+        }
+        
+        /* इमोजी रेन */
+        .emoji-rain {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 1;
+        }
+        
+        .emoji-drop {
+            position: absolute;
+            font-size: 22px;
+            animation: emojiRain linear infinite;
+            opacity: 0.8;
+        }
+        
+        @keyframes emojiRain {
+            0% { transform: translateY(-100px) rotate(0deg); }
+            100% { transform: translateY(100vh) rotate(360deg); }
+        }
+        
+        /* रोटेटिंग सर्कल इफेक्ट - बैकग्राउंड में */
+        .rotating-circle {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 90vmin;
+            height: 90vmin;
+            z-index: -1;
+            opacity: 0.1;
+        }
+        
+        .circle-item {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            font-size: 30px;
+            animation: rotate 40s linear infinite;
+            transform-origin: center;
+            filter: drop-shadow(0 0 8px currentColor);
+        }
+        
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg) translate(45vmin) rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg) translate(45vmin) rotate(-360deg);
+            }
+        }
+        
+        /* साइड इमोजी बार - ज्यादा सजावट */
+        .emoji-sidebar {
+            position: fixed;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 70px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 12px;
+            z-index: 5;
+            padding: 25px 12px;
+            background: rgba(255, 255, 255, 0.08);
+            border-radius: 0 20px 20px 0;
+            backdrop-filter: blur(15px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            box-shadow: 0 0 40px rgba(255, 215, 0, 0.4);
+        }
+        
+        .emoji-sidebar.left {
+            left: 0;
+        }
+        
+        .emoji-sidebar.right {
+            right: 0;
+            border-radius: 20px 0 0 20px;
+        }
+        
+        .emoji-sidebar span {
+            font-size: 2.5rem;
+            animation: bounce 1.5s infinite;
+            filter: drop-shadow(0 0 12px rgba(255, 255, 255, 0.6));
+        }
+        
+        @keyframes bounce {
+            0%, 100% { transform: translateY(0) scale(1); }
+            50% { transform: translateY(-15px) scale(1.1); }
+        }
+        
+        /* फूटर */
+        footer {
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 30px;
+            color: rgba(255, 255, 255, 0.6);
+            font-size: 0.85rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            position: relative;
+            z-index: 20;
+        }
+        
+        footer::before {
+            content: "🎊🎈🎆✨🌟🎇";
+            font-size: 1.6rem;
+            display: block;
+            margin-bottom: 12px;
+            opacity: 0.7;
+            letter-spacing: 8px;
+        }
+        
+        /* सफलता संदेश */
+        .alert {
+            position: fixed;
+            top: 15px;
+            right: 15px;
+            padding: 12px 20px;
+            border-radius: 10px;
+            font-weight: 600;
+            z-index: 1000;
+            display: none;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            max-width: 350px;
+        }
+        
+        .alert.success {
+            background: rgba(78, 205, 196, 0.9);
+            color: white;
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+        
+        .alert.error {
+            background: rgba(255, 107, 107, 0.9);
+            color: white;
+            display: block;
+            animation: slideIn 0.3s ease;
+        }
+        
+        @keyframes slideIn {
+            from { transform: translateX(100%); opacity: 0; }
+            to { transform: translateX(0); opacity: 1; }
+        }
+        
+        /* ग्लिटर और स्पार्कल्स */
+        .glitter, .sparkle { position: absolute; pointer-events: none; }
+        .glitter { width: 8px; height: 8px; background: gold; border-radius: 50%; animation: glitter 2s infinite; }
+        .sparkle { width: 5px; height: 5px; background: var(--gold); border-radius: 50%; animation: sparkle 3s infinite; }
+        @keyframes glitter { 0%,100% { opacity: 0; transform: scale(0); } 50% { opacity: 1; transform: scale(1); } }
+        @keyframes sparkle { 0%,100% { opacity: 0; transform: scale(0); } 50% { opacity: 1; transform: scale(1); } }
+        
+        /* कस्टम मैसेज ऑप्शन */
+        .custom-option {
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px dashed rgba(255, 255, 255, 0.3);
+        }
+        
+        /* मोबाइल रेस्पॉन्सिव */
+        @media (max-width: 768px) {
+            .app-title { font-size: 2.5rem; }
+            .magic-box { width: 200px; height: 200px; }
+            .hardik-shubhkamnaye { font-size: 1.6rem; }
+            .share-btn { min-width: 100%; }
+            .emoji-sidebar { width: 50px; }
+            .emoji-sidebar span { font-size: 2rem; }
+            .greeting-card, .preview-card { padding: 20px 15px; max-height: 350px; }
+            .main-message, .preview-message { font-size: 1.5rem; }
+            .create-greeting { padding: 20px 15px; }
+            .category-btn { min-width: 160px; font-size: 1rem; padding: 10px 20px; }
+            .sub-category-btn { min-width: 140px; font-size: 0.9rem; }
+            .big-heart { font-size: 80px; }
+            .sender-name, .preview-sender { font-size: 1.4rem; }
+        }
+        
+        @media (max-width: 480px) {
+            .app-title { font-size: 2rem; }
+            .magic-box { width: 170px; height: 170px; }
+            .hardik-shubhkamnaye { font-size: 1.4rem; }
+            .big-heart { font-size: 70px; }
+            .main-message, .preview-message { font-size: 1.3rem; }
+            .greeting-card, .preview-card { padding: 18px 12px; max-height: 300px; }
+            .emoji-sidebar { display: none; }
+            .share-btn { padding: 10px 15px; font-size: 0.9rem; }
+            .category-btn { min-width: 140px; font-size: 0.95rem; padding: 8px 16px; }
+            .sub-category-btn { min-width: 120px; font-size: 0.85rem; padding: 8px 12px; }
+            .ad-container { padding: 15px; min-height: 80px; }
+            .ad-text { font-size: 0.8rem; }
+        }
+        
+        /* स्मार्टफोन के लिए विशेष */
+        @media (max-width: 360px) {
+            .app-title { font-size: 1.8rem; }
+            .magic-box { width: 150px; height: 150px; }
+            .hardik-shubhkamnaye { font-size: 1.2rem; }
+            .category-btn { min-width: 100%; }
+            .main-message, .preview-message { font-size: 1.2rem; }
+        }
+        
+        /* पोर्ट्रेट मोड में एक साथ दिखाने के लिए */
+        @media (orientation: portrait) {
+            .container {
+                padding: 15px;
+            }
+            .greeting-card {
+                max-height: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-animation" id="bgAnimation"></div>
+    <div class="rotating-circle" id="rotatingCircle"></div>
+    <div class="emoji-rain" id="emojiRain"></div>
+    
+    <div class="emoji-sidebar left">
+        <span>🎉</span><span>✨</span><span>🥳</span><span>🎊</span><span>🎈</span><span>🎁</span><span>🎀</span><span>🌟</span><span>❤️</span><span>🥂</span>
+    </div>
+    <div class="emoji-sidebar right">
+        <span>🎇</span><span>🎆</span><span>🪅</span><span>🪩</span><span>🌸</span><span>🌺</span><span>🌹</span><span>🍾</span><span>🥰</span><span>😍</span>
+    </div>
+    
+    <div class="alert" id="alert"></div>
+    
+    <div class="container">
+        <header>
+            <h1 class="app-title">उत्सव फॉरवर्ड</h1>
+            <p class="app-subtitle">नया साल 2026 की एनिमेटेड शुभकामनाएं</p>
+        </header>
+        
+        <!-- एड स्थान - हेडर के नीचे -->
+        <div class="ad-container">
+            <div class="ad-text">
+                🎊 विशेष नववर्ष ऑफर! 🎊<br>
+                अपनी ग्रीटिंग शेयर करें और जीतें रोमांचक पुरस्कार!
+            </div>
+        </div>
+        
+        <!-- 1. पहले सर्किल -->
+        <div class="magic-container">
+            <div class="magic-box">
+                <div class="octagon-wrap">
+                    <div class="square"></div> 
+                    <div class="square sq2"></div> 
+                    <div class="outer-circle"></div>
+                </div>
+                <div class="bindi-ring"></div>
+                <div class="inner-most-circle"></div> 
+                <div class="rose r1">🌹</div>
+                <div class="rose r2">🌹</div>
+                <div class="rose r3">🌹</div>
+                <div class="rose r4">🌹</div>
+                <div class="heart-content">
+                    <div class="big-heart">❤</div>
+                    <div class="text-overlay">
+                        <p class="year">2026</p>
+                        <p class="sub-text">नया साल मुबारक</p>
+                    </div>
+                </div>
+            </div>
+            <!-- 2. नव वर्ष की हार्दिक शुभकामनाएं -->
+            <div class="hardik-shubhkamnaye">नव वर्ष की हार्दिक शुभकामनाएं!</div>
+        </div>
+        
+        <!-- 3. मुख्य मैसेज का बॉक्स -->
+        <div class="greeting-card" id="mainGreetingCard">
+            <div class="emoji-decoration" style="top: 15px; left: 15px; animation-delay: 0s;">🎉</div>
+            <div class="emoji-decoration" style="top: 15px; right: 15px; animation-delay: 1s;">✨</div>
+            <div class="emoji-decoration" style="bottom: 15px; left: 15px; animation-delay: 2s;">🥳</div>
+            <div class="emoji-decoration" style="bottom: 15px; right: 15px; animation-delay: 3s;">🎊</div>
+            <div class="emoji-decoration" style="top: 50%; left: 8px; transform: translateY(-50%); animation-delay: 0.5s;">🎁</div>
+            <div class="emoji-decoration" style="top: 50%; right: 8px; transform: translateY(-50%); animation-delay: 1.5s;">🌟</div>
+            
+            <h2 class="main-message" id="mainMessage">नए साल की ढेर सारी शुभकामनाएं!<br>स्वास्थ्य, सफलता और खुशियों से भरा हो आपका नया साल!</h2>
+            <div class="sender-name" id="senderName">~ आपका अपना ❤️</div>
+        </div>
+        
+        <!-- 4. अपनी ग्रीटिंग बनाएं बटन -->
+        <div class="share-options">
+            <button class="share-btn create-new" id="createGreetingBtn">
+                <i class="fas fa-plus btn-icon"></i> अपनी ग्रीटिंग बनाएं
+            </button>
+        </div>
+        
+        <!-- 5. ग्रीटिंग बनाने का फॉर्म -->
+        <div class="create-greeting" id="createGreetingSection">
+            <h3 class="section-title">अपनी खुद की ग्रीटिंग बनाएं ✨</h3>
+            
+            <div class="form-group">
+                <label for="senderNameInput">आपका नाम ✍️</label>
+                <input type="text" id="senderNameInput" class="form-control" value="आपका अपना">
+            </div>
+            
+            <!-- नया: शायरी/शुभकामना कैटेगरी चुनें -->
+            <div class="category-selector">
+                <div class="category-main">
+                    <button class="category-btn" id="shayariBtn">
+                        <span class="category-icon">📜</span> शायरी चुनें
+                    </button>
+                    <button class="category-btn" id="shubhkamnayeBtn">
+                        <span class="category-icon">🎊</span> शुभकामनाएं चुनें
+                    </button>
+                </div>
+                
+                <!-- शायरी सब-कैटेगरी -->
+                <div class="sub-category" id="shayariSubCategory">
+                    <button class="sub-category-btn" data-category="romantic">💖 रोमांटिक लव शायरी</button>
+                    <button class="sub-category-btn" data-category="propose">💌 प्रपोज और यादगार शायरी</button>
+                    <button class="sub-category-btn" data-category="newyear">🎉 नए साल पर आधारित शायरी</button>
+                </div>
+                
+                <!-- शुभकामनाएं सब-कैटेगरी -->
+                <div class="sub-category" id="shubhkamnayeSubCategory">
+                    <button class="sub-category-btn" data-category="elderly">👴 बुजुर्गों के लिए</button>
+                    <button class="sub-category-btn" data-category="children">👶 बच्चों के लिए</button>
+                    <button class="sub-category-btn" data-category="family">👨‍👩‍👧‍👦 माता-पिता/भाई-बहन/परिवार</button>
+                    <button class="sub-category-btn" data-category="relatives">🤝 रिश्तेदारों के लिए</button>
+                    <button class="sub-category-btn" data-category="lovedones">💑 पति-पत्नी/दोस्त/लवर</button>
+                </div>
+                
+                <!-- शायरी विकल्प -->
+                <div class="shayari-options" id="shayariOptions"></div>
+                
+                <!-- शुभकामना विकल्प -->
+                <div class="shayari-options" id="shubhkamnayeOptions"></div>
+            </div>
+            
+            <!-- कस्टम मैसेज -->
+            <div class="custom-option">
+                <div class="form-group">
+                    <label for="greetingMessage">अपना शुभकामना संदेश 📝 (संपादित कर सकते हैं)</label>
+                    <textarea id="greetingMessage" class="form-control" rows="4">नए साल की ढेर सारी शुभकामनाएं! स्वास्थ्य, सफलता और खुशियों से भरा हो आपका नया साल!</textarea>
+                </div>
+            </div>
+            
+            <button class="submit-btn" id="previewBtn">प्रीव्यू देखें ✨</button>
+        </div>
+        
+        <!-- 6. प्रीव्यू सेक्शन -->
+        <div class="preview-section" id="previewSection">
+            <h3 class="section-title">आपकी ग्रीटिंग का प्रीव्यू 👇</h3>
+            <div class="preview-card" id="previewGreetingCard">
+                <div class="emoji-decoration" style="top: 10px; left: 10px; animation-delay: 0s;">🎉</div>
+                <div class="emoji-decoration" style="top: 10px; right: 10px; animation-delay: 1s;">✨</div>
+                <div class="emoji-decoration" style="bottom: 10px; left: 10px; animation-delay: 2s;">🥳</div>
+                <div class="emoji-decoration" style="bottom: 10px; right: 10px; animation-delay: 3s;">🎊</div>
+                
+                <h2 class="preview-message" id="previewMessage"></h2>
+                <div class="preview-sender" id="previewSender"></div>
+            </div>
+            
+            <!-- एड स्थान - फुटर के ऊपर -->
+            <div class="ad-container ad-container-bottom">
+                <div class="ad-text">
+                    🌟 नववर्ष विशेष! 🌟<br>
+                    अपने प्रियजनों को भेजें अनोखी शुभकामनाएं!
+                </div>
+            </div>
+            
+            <!-- 7. व्हाट्सएप शेयर और नई ग्रीटिंग बनाएं बटन -->
+            <div class="share-options">
+                <button class="share-btn whatsapp" id="previewWhatsapp">
+                    <i class="fab fa-whatsapp btn-icon"></i> व्हाट्सएप पर शेयर करें
+                </button>
+                <button class="share-btn create-new" id="createNewGreetingBtn">
+                    <i class="fas fa-plus btn-icon"></i> नई ग्रीटिंग बनाएं
+                </button>
+            </div>
+        </div>
+        
+        <footer>
+            <p>नया साल 2026 की शुभकामनाएं | यह ग्रीटिंग कार्ड "उत्सव फॉरवर्ड" द्वारा बनाया गया है</p>
+            <p>© 2026 उत्सव फॉरवर्ड. सभी अधिकार सुरक्षित.</p>
+        </footer>
+    </div>
+    
+    <script>
+        // सभी DOM
+        const mainMessage = document.getElementById('mainMessage');
+        const senderName = document.getElementById('senderName');
+        const createGreetingSection = document.getElementById('createGreetingSection');
+        const previewSection = document.getElementById('previewSection');
+        const createGreetingBtn = document.getElementById('createGreetingBtn');
+        const greetingMessageInput = document.getElementById('greetingMessage');
+        const senderNameInput = document.getElementById('senderNameInput');
+        const previewBtn = document.getElementById('previewBtn');
+        const previewMessage = document.getElementById('previewMessage');
+        const previewSender = document.getElementById('previewSender');
+        const alertBox = document.getElementById('alert');
+        const previewWhatsapp = document.getElementById('previewWhatsapp');
+        const createNewGreetingBtn = document.getElementById('createNewGreetingBtn');
+        const mainGreetingCard = document.getElementById('mainGreetingCard');
+        const previewGreetingCard = document.getElementById('previewGreetingCard');
+        
+        // नए एलिमेंट्स
+        const shayariBtn = document.getElementById('shayariBtn');
+        const shubhkamnayeBtn = document.getElementById('shubhkamnayeBtn');
+        const shayariSubCategory = document.getElementById('shayariSubCategory');
+        const shubhkamnayeSubCategory = document.getElementById('shubhkamnayeSubCategory');
+        const shayariOptions = document.getElementById('shayariOptions');
+        const shubhkamnayeOptions = document.getElementById('shubhkamnayeOptions');
+        
+        // शायरी डेटाबेस
+        const shayariDatabase = {
+            romantic: [
+                {emoji: "💖", text: "आपके सारे ग़म खुशियों में तोल दूँ, अपने सारे राज़ आपके सामने खोल दूँ। कोई मुझसे पहले न बोल दे इसलिए, सोचा क्यों न आज ही आपको Happy New Year बोल दूँ!"},
+                {emoji: "🌙", text: "ज़िंदगी की एक और नई रात, नया साल है, दिल में तेरा ही अरमान, तेरे ही ख़याल हैं। आज भी तेरा इंतज़ार करते हैं हम, ज़िंदगी की एक और नई रात, नया साल है।"},
+                {emoji: "💌", text: "फूलों से चुराकर खुशबू तमाम भेज रहा हूँ, प्यार के गुलशन का गुलफाम भेज रहा हूँ। तुम इसे पढ़कर एक बार मुस्कुरा देना, दिल की गहराइयों से सलाम भेज रहा हूँ।"},
+                {emoji: "❤️", text: "तुम्हारी यादों की चादर ओढ़कर सोता हूँ हर रात, नया साल भी तुम्हारे बिना अधूरा है मेरे साथ। तुम हो तो हर पल है नया साल मेरे लिए, बस एक बार मुस्कुरा दो मेरे लिए।"},
+                {emoji: "🌹", text: "तुम्हारी हर साँस में बस जाऊँ मैं ऐसा चाहता हूँ, नए साल में तुम्हारा हो जाऊँ मैं ऐसा चाहता हूँ। तुम्हारे दिल में अपनी जगह बनाऊँ मैं, यही अरमान लेकर आया है यह नया साल।"},
+                {emoji: "✨", text: "तुम्हारी आँखों में हज़ारों सपने देखता हूँ, तुम्हारे साथ हर पल को सजता हूँ। नया साल हमारे प्यार को और गहरा करे, यही दुआ है दिल से मेरे।"},
+                {emoji: "🥰", text: "तुम मेरी ज़िंदगी का सबसे खूबसूरत अध्याय हो, तुम्हारे बिना हर दिन अधूरा सा लगता है। नया साल हमें और करीब लाए, यही है मेरी सबसे बड़ी चाहत।"},
+                {emoji: "💫", text: "तुम्हारी मुस्कान है मेरी दुनिया की रोशनी, तुम्हारा साथ है मेरी हर खुशी की वजह। नया साल हमारे रिश्ते को और मजबूत करे, हमेशा तुम मेरे साथ रहो यही दुआ है।"},
+                {emoji: "🌸", text: "तुम्हारे लिए हर दिन है खास मेरे लिए, तुम्हारी हर बात है प्यारी मेरे लिए। नया साल हमारे प्यार की नई कहानी लिखे, हमेशा साथ रहें हम यही है कामना।"},
+                {emoji: "💞", text: "तुम हो तो हर मुश्किल आसान लगती है, तुम हो तो हर रात सुहानी लगती है। नया साल हमारे साथ ऐसे ही बीते, यही है दिल की गहराइयों से दुआ।"},
+                {emoji: "🌠", text: "तुम्हारे सपने हैं मेरे सपने, तुम्हारी खुशी है मेरी खुशी। नया साल हमारी हर इच्छा पूरी करे, हमेशा साथ रहें हम यही है अरमान।"},
+                {emoji: "💝", text: "तुम्हारी हर अदा पर फिदा हूँ मैं, तुम्हारी हर बात पे मर मिटता हूँ। नया साल हमारे प्यार को चार चाँद लगाए, यही है मेरी सबसे बड़ी चाहत।"},
+                {emoji: "🕊️", text: "तुम्हारे साथ बिताया हर पल है यादगार, तुम्हारी यादों में खो जाता हूँ बार-बार। नया साल नई यादें हमारे लिए लाए, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "🌌", text: "तुम्हारी हर साँस में बसता हूँ मैं, तुम्हारे हर ख़्याल में खो जाता हूँ। नया साल हमारे रिश्ते को और निखारे, यही है दिल की गहराई से चाहत।"},
+                {emoji: "💘", text: "तुम हो तो हर दिन है त्योहार मेरे लिए, तुम हो तो हर रात है खास मेरे लिए। नया साल हमारे प्यार को और बढ़ाए, हमेशा तुम मेरे साथ रहो यही है दुआ।"}
+            ],
+            propose: [
+                {emoji: "💍", text: "नया साल आया है, एक नया मौका भी आया है, तुम्हारे सामने दिल रखने का, क्या तुम मेरा साथ निभाओगी? मेरे जीवन की हर खुशी तुम हो, क्या तुम मेरी ज़िंदगी बनोगी?"},
+                {emoji: "📖", text: "यादों की इस किताब में तुम्हारा हर पन्ना सजाऊंगा, नए साल के साथ तुम्हें प्रपोज करने का साहस लाऊंगा। तुम्हारे साथ बिताना चाहता हूँ मैं हर नया साल, क्या तुम मुझे यह खुशी दोगी?"},
+                {emoji: "💑", text: "तुम्हारे बिना अधूरी है मेरी हर सुबह, तुम्हारे बिना अधूरी है मेरी हर शाम। नए साल में तुम्हें अपनी ज़िंदगी में शामिल करना चाहता हूँ, क्या तुम मेरी होगी?"},
+                {emoji: "🌹", text: "इस नए साल में एक नया सवाल लेकर आया हूँ, क्या तुम मेरी ज़िंदगी की हमसफ़र बनोगी? तुम्हारे साथ हर पल है खास मेरे लिए, तुम्हारे बिना हर दिन है अधूरा।"},
+                {emoji: "💌", text: "तुम्हारी याद में खोया रहता हूँ हर पल, तुम्हारे ख़्याल में डूबा रहता हूँ हर वक़्त। नया साल हमारे रिश्ते की नई शुरुआत हो, क्या तुम मेरी होने का वादा करोगी?"},
+                {emoji: "✨", text: "तुम्हारी आँखों में अपना भविष्य देखता हूँ, तुम्हारे साथ अपनी हर खुशी बाँटना चाहता हूँ। नया साल हमारे प्यार की नई कहानी लिखे, क्या तुम मेरी ज़िंदगी बनोगी?"},
+                {emoji: "❤️", text: "तुम हो तो हर मुश्किल आसान लगती है, तुम हो तो हर दिन खुशनुमा लगता है। नए साल में तुमसे एक सवाल पूछना चाहता हूँ, क्या तुम मेरी होगी हमेशा के लिए?"},
+                {emoji: "🥰", text: "तुम्हारी मुस्कान है मेरी दुनिया की रोशनी, तुम्हारा साथ है मेरी हर सफलता की चाबी। नया साल हमारे मिलन का साक्षी बने, क्या तुम मेरी ज़िंदगी साथी बनोगी?"},
+                {emoji: "💫", text: "तुम्हारे लिए धड़कता है मेरा दिल हर पल, तुम्हारे लिए जीता हूँ मैं हर दिन। नया साल हमारे प्यार की नई इब्तिदा हो, क्या तुम मेरी होने का फैसला करोगी?"},
+                {emoji: "🌸", text: "तुम्हारी हर अदा पर फिदा हूँ मैं, तुम्हारी हर बात पे मर मिटता हूँ। नए साल में तुमसे पूछना चाहता हूँ, क्या तुम मेरी ज़िंदगी की सबसे खास होगी?"},
+                {emoji: "💞", text: "तुम हो तो हर सपना सच लगता है, तुम हो तो हर दिन नया लगता है। नया साल हमारे रिश्ते की नई शुरुआत हो, क्या तुम मेरी होने का वादा करोगी?"},
+                {emoji: "🌠", text: "तुम्हारे सपने हैं मेरे सपने, तुम्हारी खुशी है मेरी खुशी। नया साल हमारी जोड़ी को और मजबूत करे, क्या तुम मेरी होगी हमेशा के लिए?"},
+                {emoji: "💝", text: "तुम्हारी हर मुस्कान पर न्योछावर हूँ मैं, तुम्हारी हर खुशी पर कुर्बान हूँ मैं। नए साल में तुमसे एक सवाल है, क्या तुम मेरी ज़िंदगी की रानी बनोगी?"},
+                {emoji: "🕊️", text: "तुम्हारे साथ बिताया हर पल है यादगार, तुम्हारी यादों में खो जाता हूँ बार-बार। नया साल हमारे मिलन का साक्षी बने, क्या तुम मेरी होगी हमेशा के लिए?"},
+                {emoji: "🌌", text: "तुम्हारी हर साँस में बसता हूँ मैं, तुम्हारे हर ख़्याल में खो जाता हूँ। नया साल हमारे प्यार की नई इब्तिदा हो, क्या तुम मेरी ज़िंदगी साथी बनोगी?"}
+            ],
+            newyear: [
+                {emoji: "🎊", text: "फूल हैं गुलाब का, खुशबू लीजिए, पहला दिन है नए साल का, आनंद लीजिए। नया साल आपके जीवन में खुशियाँ लाए, हर दिन नई उम्मीदें और नए सपने दिखाए।"},
+                {emoji: "🎉", text: "हर साल आता है, हर साल जाता है, इस नए साल में आपको वो सब मिले, जो आपका दिल चाहता है। नया साल 2026 मुबारक हो!"},
+                {emoji: "✨", text: "नया साल नई उम्मीदें लेकर आया है, पुराने ग़म भुलाकर नया जीवन जीने का संदेश लाया है। आपके जीवन में खुशियों की बहार हो, नया साल आपको समृद्धि और सफलता दे।"},
+                {emoji: "🌟", text: "नया साल नई शुरुआत का नाम है, नई उम्मीदों और नए सपनों का दाम है। आपकी हर मनोकामना पूरी हो, नया साल आपको खुशियाँ दे अनगिनत।"},
+                {emoji: "🥳", text: "नया साल आया है नई रौनक लेकर, नए सपने और नई उम्मीदें लेकर। आपके जीवन में खुशियों की वर्षा हो, नया साल आपको सफलता और समृद्धि दे।"},
+                {emoji: "🎆", text: "नया साल नई उड़ान का संदेश लाया है, पुरानी यादें संजोकर आगे बढ़ने का पैगाम लाया है। आपकी हर मुराद पूरी हो, नया साल आपके लिए मंगलमय हो।"},
+                {emoji: "🎇", text: "नया साल नई खुशियों का तोहफा लाया है, नई उम्मीदों और नए सपनों का खजाना लाया है। आपके जीवन में सुख-समृद्धि हो, नया साल आपको अनगिनत आशीर्वाद दे।"},
+                {emoji: "🪅", text: "नया साल नई शुरुआत का प्रतीक है, नई ऊर्जा और नए जोश का प्रतीक है। आपके हर कदम पर सफलता मिले, नया साल आपके लिए शुभ हो।"},
+                {emoji: "🪩", text: "नया साल नई रोशनी लेकर आया है, जीवन के हर पहलू को निखारने आया है। आपके जीवन में खुशियों का सागर हो, नया साल आपको सफलता की ऊँचाइयाँ दे।"},
+                {emoji: "🌸", text: "नया साल नई बहार लेकर आया है, जीवन के हर रंग को निखारने आया है। आपके हर सपने सच हों, नया साल आपके लिए मंगलकारी हो।"},
+                {emoji: "🌺", text: "नया साल नई उम्मीदों का द्वार खोलता है, नए सपनों को पंख देकर उड़ने को कहता है। आपकी हर इच्छा पूरी हो, नया साल आपके लिए शुभ हो।"},
+                {emoji: "🌹", text: "नया साल नई शुरुआत का नाम है, नई उम्मीदों और नए सपनों का दाम है। आपके जीवन में खुशियों की वर्षा हो, नया साल आपको सफलता दे।"},
+                {emoji: "🍾", text: "नया साल नई खुशियों का संदेश लाया है, नई उम्मीदों और नए सपनों का पैगाम लाया है। आपके जीवन में समृद्धि हो, नया साल आपके लिए मंगलमय हो।"},
+                {emoji: "🥰", text: "नया साल नई शुरुआत का प्रतीक है, नई ऊर्जा और नए जोश का प्रतीक है। आपके हर कदम पर सफलता मिले, नया साल आपके लिए शुभ हो।"},
+                {emoji: "😍", text: "नया साल नई रौनक लेकर आया है, नए सपने और नई उम्मीदें लेकर। आपके जीवन में खुशियों की बहार हो, नया साल आपको समृद्धि और सफलता दे।"}
+            ]
+        };
+        
+        // शुभकामना डेटाबेस
+        const shubhkamnayeDatabase = {
+            elderly: [
+                {emoji: "🙏", text: "आपका आशीर्वाद यूँ ही हम पर बना रहे, आपका जीवन सुख, शांति से सजा रहे। सेहत और सुकून हर दिन साथ दें, नव वर्ष 2026 आपको खुशहाल बनाए।"},
+                {emoji: "👴", text: "आपके अनुभव और आशीर्वाद से हम सीखते रहें, नया साल आपको सेहत और सुकून से भर दे। हर दिन खुशियों से भरपूर हो, यही है हमारी दिल से दुआ।"},
+                {emoji: "🕉️", text: "ईश्वर आपको सेहत और सुख दे, नया साल आपके जीवन में खुशियाँ भर दे। आपका आशीर्वाद हम पर सदा बना रहे, यही है हमारी दिल से चाहत।"},
+                {emoji: "🌺", text: "बुजुर्गों के आशीर्वाद से घर में खुशहाली आती है, उनकी दुआओं से हर मुश्किल आसान हो जाती है। नया साल आपको सेहत और सुख दे, यही है हमारी दिल से दुआ।"},
+                {emoji: "🌸", text: "आपके जीवन में खुशियों की बहार हो, नया साल आपको सेहत और समृद्धि दे। आपका आशीर्वाद हम पर सदा बना रहे, यही है हमारी दिल से चाहत।"},
+                {emoji: "🕯️", text: "आपकी हर दुआ कबूल हो, आपका हर दिन खुशियों से भरपूर हो। नया साल आपके जीवन में समृद्धि लाए, यही है हमारी दिल से दुआ।"},
+                {emoji: "🙌", text: "आपके अनुभवों से हम सीखते रहें, आपके आशीर्वाद से हम आगे बढ़ते रहें। नया साल आपको सेहत और सुख दे, यही है हमारी दिल से चाहत।"},
+                {emoji: "💫", text: "आपका जीवन सुख और शांति से भरा रहे, नया साल आपको खुशियों से नहला दे। आपका आशीर्वाद हम पर सदा बना रहे, यही है हमारी दिल से दुआ।"},
+                {emoji: "🌟", text: "आपके जीवन में खुशियों की रोशनी बिखेरे, नया साल आपको सेहत और समृद्धि दे। आपका हर दिन मंगलमय हो, यही है हमारी दिल से चाहत।"},
+                {emoji: "🌷", text: "आपके जीवन में फूलों सी खुशबू बिखरे, नया साल आपको सेहत और सुख दे। आपका आशीर्वाद हम पर सदा बना रहे, यही है हमारी दिल से दुआ।"},
+                {emoji: "🌼", text: "आपकी हर सुबह नई उम्मीदों के साथ हो, आपकी हर शाम संतोष के साथ हो। नया साल आपके जीवन में खुशियाँ लाए, यही है हमारी दिल से चाहत।"},
+                {emoji: "💐", text: "आपके जीवन में खुशियों की बहार हो, नया साल आपको सेहत और समृद्धि दे। आपका आशीर्वाद हम पर सदा बना रहे, यही है हमारी दिल से दुआ।"},
+                {emoji: "🪷", text: "आपका जीवन शांति और सुख से भरा रहे, नया साल आपको खुशियों से नहला दे। आपका हर दिन मंगलमय हो, यही है हमारी दिल से चाहत।"},
+                {emoji: "🌅", text: "आपके जीवन का हर सूरज नई उम्मीद लेकर आए, आपका हर दिन खुशियों से भरपूर हो। नया साल आपको सेहत और सुख दे, यही है हमारी दिल से दुआ।"},
+                {emoji: "🌈", text: "आपके जीवन में रंगों सी खुशियाँ आएं, नया साल आपको सेहत और समृद्धि दे। आपका आशीर्वाद हम पर सदा बना रहे, यही है हमारी दिल से चाहत।"}
+            ],
+            children: [
+                {emoji: "👶", text: "नया साल आए खुशियों की सौगात लेकर, हर दिन लाए मुस्कान और सीख साथ लेकर। आप बढ़ते रहें सपनों की ऊँचाई तक, नया साल दे आपको प्यार और सफलता हर पल।"},
+                {emoji: "🧸", text: "नन्हे हाथों में नई उम्मीदें लेकर आया है नया साल, नई सीख और नई खुशियाँ लेकर आया है। आप बड़े होकर दुनिया को नया रास्ता दिखाएं, यही है हमारी दिल से दुआ।"},
+                {emoji: "📚", text: "किताबों की दुनिया में नई कहानियाँ ढूँढो, सपनों की उड़ान में नई ऊँचाइयाँ छुओ। नया साल आपके लिए नई सीख लाए, हर दिन नई जानकारी दे।"},
+                {emoji: "🎨", text: "रंगों से भरा हो आपका जीवन हर पल, कल्पनाओं की उड़ान में छू लो आसमान। नया साल आपको नई प्रतिभा दे, हर क्षेत्र में सफलता दिलाए।"},
+                {emoji: "⚽", text: "खेल के मैदान में नई जीत हासिल करो, पढ़ाई की दुनिया में नई ऊँचाइयाँ छुओ। नया साल आपके लिए नई सफलता लाए, हर क्षेत्र में नाम रोशन करे।"},
+                {emoji: "🎮", text: "डिजिटल दुनिया में नई कला सीखो, वास्तविक दुनिया में नए दोस्त बनाओ। नया साल आपको संतुलन सिखाए, हर क्षेत्र में सफलता दिलाए।"},
+                {emoji: "🚀", text: "सपनों की रॉकेट उड़ान में बैठो, नई ऊँचाइयों को छूने का संकल्प लो। नया साल आपको नई ऊर्जा दे, हर मुकाम पर सफलता दिलाए।"},
+                {emoji: "🌟", text: "तारे की तरह चमको आप हर क्षेत्र में, रोशनी की तरह फैलो आप हर दिशा में। नया साल आपको नई प्रतिभा दे, दुनिया को नई राह दिखाए।"},
+                {emoji: "🎭", text: "कला की दुनिया में नई पहचान बनाओ, संगीत की दुनिया में नया स्वर दो। नया साल आपको नई प्रतिभा दे, हर क्षेत्र में नाम रोशन करे।"},
+                {emoji: "🔬", text: "विज्ञान की दुनिया में नई खोज करो, तकनीक की दुनिया में नया आविष्कार करो। नया साल आपको नई सोच दे, दुनिया को नया रास्ता दिखाए।"},
+                {emoji: "🎵", text: "संगीत की दुनिया में नया स्वर दो, कला की दुनिया में नई पहचान बनाओ। नया साल आपको नई प्रतिभा दे, हर क्षेत्र में सफलता दिलाए।"},
+                {emoji: "🎪", text: "खेल की दुनिया में नया रिकॉर्ड बनाओ, मनोरंजन की दुनिया में नई पहचान बनाओ। नया साल आपको नई ऊर्जा दे, हर मुकाम पर सफलता दिलाए।"},
+                {emoji: "🏆", text: "हर प्रतियोगिता में पदक जीतो, हर परीक्षा में अव्वल आओ। नया साल आपको नई सफलता दे, हर क्षेत्र में नाम रोशन करे।"},
+                {emoji: "🎓", text: "शिक्षा की सीढ़ियाँ चढ़ते जाओ, ज्ञान की दुनिया में आगे बढ़ते जाओ। नया साल आपको नई सीख दे, हर क्षेत्र में सफलता दिलाए।"},
+                {emoji: "💡", text: "नई सोच और नई कल्पना के साथ आगे बढ़ो, नई दुनिया को नया रास्ता दिखाओ। नया साल आपको नई प्रतिभा दे, हर मुकाम पर सफलता दिलाए।"}
+            ],
+            family: [
+                {emoji: "👨‍👩‍👧‍👦", text: "परिवार की यह मिठास हमेशा बनी रहे, नया साल हर सदस्य को खुशियाँ दे। साथ मिलकर हर उत्सव मनाएं, प्यार और सम्मान का यह बंधन कभी न टूटे।"},
+                {emoji: "❤️", text: "परिवार के साथ हर पल है अनमोल, परिवार के साथ हर दिन है खास। नया साल हमारे रिश्तों को और मजबूत करे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "🏡", text: "घर की यह रौनक हमेशा बनी रहे, परिवार का यह प्यार हमेशा कायम रहे। नया साल हर सदस्य को खुशियाँ दे, साथ मिलकर हर सपना पूरा करे।"},
+                {emoji: "💞", text: "परिवार का साथ है सबसे बड़ी दौलत, परिवार का प्यार है सबसे बड़ा सहारा। नया साल हमारे रिश्तों को और गहरा करे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "🌺", text: "परिवार के फूलों से महके हमारा घर, परिवार के प्यार से जगमगाए हमारा घर। नया साल हर सदस्य को खुशियाँ दे, साथ मिलकर हर लक्ष्य पूरा करे।"},
+                {emoji: "🕊️", text: "परिवार में शांति और सद्भावना बनी रहे, परिवार में प्यार और सम्मान बना रहे। नया साल हमारे रिश्तों को और मजबूत करे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "🌟", text: "परिवार का हर सदस्य है तारे सा चमकदार, परिवार का हर रिश्ता है मोती सा निर्मल। नया साल हर सदस्य को खुशियाँ दे, साथ मिलकर हर सपना पूरा करे।"},
+                {emoji: "🌸", text: "परिवार के बगीचे में खिले हर फूल, परिवार के आँगन में गूंजे हर कलरव। नया साल हमारे रिश्तों को और गहरा करे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "💝", text: "परिवार का प्यार है अनमोल उपहार, परिवार का साथ है सबसे बड़ा आधार। नया साल हर सदस्य को खुशियाँ दे, साथ मिलकर हर लक्ष्य पूरा करे।"},
+                {emoji: "🎁", text: "परिवार के साथ हर दिन है त्योहार, परिवार के साथ हर पल है उत्सव। नया साल हमारे रिश्तों को और मजबूत करे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "🕯️", text: "परिवार के दीपक से जगमगाए हमारा घर, परिवार के प्यार से महके हमारा घर। नया साल हर सदस्य को खुशियाँ दे, साथ मिलकर हर सपना पूरा करे।"},
+                {emoji: "🌈", text: "परिवार के रंगों से सजे हमारा जीवन, परिवार के प्यार से बने हमारा जीवन। नया साल हमारे रिश्तों को और गहरा करे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "🌷", text: "परिवार के फूलों से महके हमारा आँगन, परिवार के प्यार से जगमगाए हमारा आँगन। नया साल हर सदस्य को खुशियाँ दे, साथ मिलकर हर लक्ष्य पूरा करे।"},
+                {emoji: "💫", text: "परिवार का हर सदस्य है तारे सा चमकदार, परिवार का हर रिश्ता है मोती सा निर्मल। नया साल हमारे रिश्तों को और मजबूत करे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "🎊", text: "परिवार के साथ हर उत्सव है खास, परिवार के साथ हर पल है यादगार। नया साल हर सदस्य को खुशियाँ दे, साथ मिलकर हर सपना पूरा करे।"}
+            ],
+            relatives: [
+                {emoji: "🤝", text: "रिश्तों की डोर हमेशा मजबूत बनी रहे, नया साल आपके घर में खुशहाली लेकर आए। दूर रहकर भी दिलों का मिलन बना रहे, यही है हमारी दिल से दुआ।"},
+                {emoji: "👨‍👩‍👧‍👦", text: "रिश्तेदारों का स्नेह हमेशा बना रहे, दूरी कितनी भी हो, प्यार कम न हो। नया साल आपके जीवन में खुशियाँ लाए, हर दिन नई उम्मीदें दे।"},
+                {emoji: "💕", text: "रिश्तों की मिठास हमेशा बनी रहे, दूरियाँ कितनी भी हों, प्यार कम न हो। नया साल आपके घर में खुशहाली लाए, हर पल नई यादें दे।"},
+                {emoji: "🎁", text: "रिश्तेदारों का प्यार है अनमोल उपहार, उनका आशीर्वाद है सबसे बड़ा सहारा। नया साल आपके जीवन में खुशियाँ लाए, हर दिन नई उम्मीदें दे।"},
+                {emoji: "🌺", text: "रिश्तों के फूलों से महके हमारा जीवन, रिश्तों के प्यार से जगमगाए हमारा जीवन। नया साल आपके घर में खुशहाली लाए, हर पल नई यादें दे।"},
+                {emoji: "🌟", text: "रिश्तेदारों का साथ है तारे सा चमकदार, उनका प्यार है मोती सा निर्मल। नया साल आपके जीवन में खुशियाँ लाए, हर दिन नई उम्मीदें दे।"},
+                {emoji: "💫", text: "रिश्तों की डोर हमेशा मजबूत बनी रहे, दूरियाँ कितनी भी हों, प्यार कम न हो। नया साल आपके घर में खुशहाली लाए, हर पल नई यादें दे।"},
+                {emoji: "🌸", text: "रिश्तेदारों का स्नेह हमेशा बना रहे, उनका आशीर्वाद हमेशा साथ रहे। नया साल आपके जीवन में खुशियाँ लाए, हर दिन नई उम्मीदें दे।"},
+                {emoji: "💞", text: "रिश्तों की मिठास हमेशा बनी रहे, दूरियाँ कितनी भी हों, प्यार कम न हो। नया साल आपके घर में खुशहाली लाए, हर पल नई यादें दे।"},
+                {emoji: "🎊", text: "रिश्तेदारों का साथ है सबसे बड़ी दौलत, उनका प्यार है सबसे बड़ा सहारा। नया साल आपके जीवन में खुशियाँ लाए, हर दिन नई उम्मीदें दे।"},
+                {emoji: "❤️", text: "रिश्तों के बंधन में बंधे हैं हम सब, रिश्तों के प्यार में लिपटे हैं हम सब। नया साल आपके घर में खुशहाली लाए, हर पल नई यादें दे।"},
+                {emoji: "🌷", text: "रिश्तेदारों का स्नेह हमेशा बना रहे, उनका आशीर्वाद हमेशा साथ रहे। नया साल आपके जीवन में खुशियाँ लाए, हर दिन नई उम्मीदें दे।"},
+                {emoji: "💝", text: "रिश्तों की डोर हमेशा मजबूत बनी रहे, दूरियाँ कितनी भी हों, प्यार कम न हो। नया साल आपके घर में खुशहाली लाए, हर पल नई यादें दे।"},
+                {emoji: "🕊️", text: "रिश्तेदारों का प्यार है अनमोल उपहार, उनका आशीर्वाद है सबसे बड़ा सहारा। नया साल आपके जीवन में खुशियाँ लाए, हर दिन नई उम्मीदें दे।"},
+                {emoji: "🌈", text: "रिश्तों के रंगों से सजे हमारा जीवन, रिश्तों के प्यार से बने हमारा जीवन। नया साल आपके घर में खुशहाली लाए, हर पल नई यादें दे।"}
+            ],
+            lovedones: [
+                {emoji: "💑", text: "दोस्ती यूँ ही मुस्कान बिखेरती रहे, हर मुश्किल में साथ निभाती रहे। नया साल नई उड़ानें दे आपको, कामयाबी हर कदम चूमती रहे।"},
+                {emoji: "❤️", text: "इस रिश्ते को यूँ ही बनाए रखना, दिल में यादों के चिराग जलाए रखना। बहुत प्यारा सफ़र रहा इस साल का, बस ऐसे ही साथ आगे भी निभाए रखना।"},
+                {emoji: "💖", text: "तुम्हारे साथ का हर पल अनमोल है मेरे लिए, नया साल हमारे रिश्ते को और गहरा करे। हमेशा साथ रहें हम यही है दुआ, हर मुश्किल में एक दूसरे का सहारा बने।"},
+                {emoji: "👫", text: "दोस्तों का साथ है सबसे बड़ी दौलत, उनकी मुस्कान है सबसे बड़ा सहारा। नया साल हमारी दोस्ती को और मजबूत करे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "💕", text: "प्यार का यह बंधन हमेशा बना रहे, दिलों का मिलन हमेशा कायम रहे। नया साल हमारे रिश्ते को और गहरा करे, हर पल नई यादें दे।"},
+                {emoji: "🥰", text: "तुम हो तो हर दिन है खास मेरे लिए, तुम हो तो हर रात है यादगार मेरे लिए। नया साल हमारे प्यार को और निखारे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "💞", text: "दोस्तों के साथ बिताया हर पल है यादगार, दोस्तों के साथ हर दिन है खास। नया साल हमारी दोस्ती को और मजबूत करे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "💝", text: "प्यार का यह उपहार हमेशा बना रहे, दिलों का यह मिलन हमेशा कायम रहे। नया साल हमारे रिश्ते को और गहरा करे, हर पल नई यादें दे।"},
+                {emoji: "👭", text: "दोस्तों का साथ है सबसे बड़ी दौलत, उनकी हंसी है सबसे बड़ा सहारा। नया साल हमारी दोस्ती को और मजबूत करे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "💘", text: "तुम्हारे साथ हर पल है अनमोल, तुम्हारे साथ हर दिन है खास। नया साल हमारे प्यार को और निखारे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "🤗", text: "दोस्तों के साथ बिताया हर पल है यादगार, दोस्तों के साथ हर दिन है खास। नया साल हमारी दोस्ती को और मजबूत करे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "💌", text: "प्यार का यह पैगाम हमेशा बना रहे, दिलों का यह मिलन हमेशा कायम रहे। नया साल हमारे रिश्ते को और गहरा करे, हर पल नई यादें दे।"},
+                {emoji: "👬", text: "दोस्तों का साथ है सबसे बड़ी दौलत, उनकी मुस्कान है सबसे बड़ा सहारा। नया साल हमारी दोस्ती को और मजबूत करे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "💓", text: "तुम हो तो हर दिन है खास मेरे लिए, तुम हो तो हर रात है यादगार मेरे लिए। नया साल हमारे प्यार को और निखारे, हमेशा साथ रहें हम यही है दुआ।"},
+                {emoji: "💗", text: "प्यार का यह बंधन हमेशा बना रहे, दिलों का मिलन हमेशा कायम रहे। नया साल हमारे रिश्ते को और गहरा करे, हर पल नई यादें दे।"}
+            ]
+        };
+        
+        // वर्तमान चयनित कैटेगरी
+        let selectedCategory = null;
+        let selectedSubCategory = null;
+        
+        // कैटेगरी बटन इवेंट
+        shayariBtn.addEventListener('click', () => {
+            shayariBtn.classList.add('active');
+            shubhkamnayeBtn.classList.remove('active');
+            shayariSubCategory.classList.add('active');
+            shubhkamnayeSubCategory.classList.remove('active');
+            shayariOptions.classList.remove('active');
+            shubhkamnayeOptions.classList.remove('active');
+            selectedCategory = 'shayari';
+        });
+        
+        shubhkamnayeBtn.addEventListener('click', () => {
+            shubhkamnayeBtn.classList.add('active');
+            shayariBtn.classList.remove('active');
+            shubhkamnayeSubCategory.classList.add('active');
+            shayariSubCategory.classList.remove('active');
+            shayariOptions.classList.remove('active');
+            shubhkamnayeOptions.classList.remove('active');
+            selectedCategory = 'shubhkamnaye';
+        });
+        
+        // सब-कैटेगरी बटन इवेंट
+        document.querySelectorAll('.sub-category-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                // सभी सब-कैटेगरी बटन से एक्टिव क्लास हटाएं
+                document.querySelectorAll('.sub-category-btn').forEach(b => {
+                    b.classList.remove('active');
+                });
+                
+                // क्लिक किए गए बटन को एक्टिव करें
+                this.classList.add('active');
+                selectedSubCategory = this.dataset.category;
+                
+                // संबंधित विकल्प दिखाएं
+                if (selectedCategory === 'shayari') {
+                    displayShayariOptions(selectedSubCategory);
+                } else if (selectedCategory === 'shubhkamnaye') {
+                    displayShubhkamnayeOptions(selectedSubCategory);
+                }
+            });
+        });
+        
+        // शायरी विकल्प दिखाएं
+        function displayShayariOptions(category) {
+            shayariOptions.innerHTML = '';
+            const shayaris = shayariDatabase[category];
+            
+            shayaris.forEach(shayari => {
+                const item = document.createElement('div');
+                item.className = 'shayari-item';
+                item.innerHTML = `
+                    <div class="shayari-text">
+                        <span class="shayari-emoji">${shayari.emoji}</span>
+                        ${shayari.text}
+                    </div>
+                `;
+                
+                item.addEventListener('click', () => {
+                    greetingMessageInput.value = shayari.text;
+                    showAlert('शायरी चुनी गई! ✨', 'success');
+                });
+                
+                shayariOptions.appendChild(item);
+            });
+            
+            shayariOptions.classList.add('active');
+            shubhkamnayeOptions.classList.remove('active');
+        }
+        
+        // शुभकामना विकल्प दिखाएं
+        function displayShubhkamnayeOptions(category) {
+            shubhkamnayeOptions.innerHTML = '';
+            const shubhkamnaye = shubhkamnayeDatabase[category];
+            
+            shubhkamnaye.forEach(itemData => {
+                const item = document.createElement('div');
+                item.className = 'shayari-item';
+                item.innerHTML = `
+                    <div class="shayari-text">
+                        <span class="shayari-emoji">${itemData.emoji}</span>
+                        ${itemData.text}
+                    </div>
+                `;
+                
+                item.addEventListener('click', () => {
+                    greetingMessageInput.value = itemData.text;
+                    showAlert('शुभकामना चुनी गई! ✨', 'success');
+                });
+                
+                shubhkamnayeOptions.appendChild(item);
+            });
+            
+            shubhkamnayeOptions.classList.add('active');
+            shayariOptions.classList.remove('active');
+        }
+        
+        // मैसेज के हिसाब से कार्ड एडजस्ट करें
+        function adjustCardHeight(cardElement, messageElement) {
+            const lines = messageElement.textContent.split('\n').length;
+            if (lines <= 3) {
+                cardElement.classList.add('auto-adjust');
+            } else {
+                cardElement.classList.remove('auto-adjust');
+            }
+        }
+        
+        // थीम टच पर बदलती है
+        let themeIndex = 0;
+        const themes = ['default', 'golden', 'blue', 'green', 'purple'];
+        document.body.addEventListener('click', () => {
+            themeIndex = (themeIndex + 1) % themes.length;
+            applyTheme(themes[themeIndex]);
+        });
+        document.body.addEventListener('touchstart', () => {
+            themeIndex = (themeIndex + 1) % themes.length;
+            applyTheme(themes[themeIndex]);
+        });
+        
+        function applyTheme(theme) {
+            const root = document.documentElement;
+            if (theme === 'golden') {
+                root.style.setProperty('--gold', '#FFD700');
+                root.style.setProperty('--primary', '#D4AF37');
+                root.style.setProperty('--secondary', '#FFD700');
+                root.style.setProperty('--accent', '#FFF8DC');
+                root.style.setProperty('--red', '#FF3366');
+            } else if (theme === 'blue') {
+                root.style.setProperty('--gold', '#3A86FF');
+                root.style.setProperty('--primary', '#3A86FF');
+                root.style.setProperty('--secondary', '#8338EC');
+                root.style.setProperty('--accent', '#FF006E');
+                root.style.setProperty('--red', '#FF006E');
+            } else if (theme === 'green') {
+                root.style.setProperty('--gold', '#2A9D8F');
+                root.style.setProperty('--primary', '#2A9D8F');
+                root.style.setProperty('--secondary', '#E9C46A');
+                root.style.setProperty('--accent', '#F4A261');
+                root.style.setProperty('--red', '#E76F51');
+            } else if (theme === 'purple') {
+                root.style.setProperty('--gold', '#8338EC');
+                root.style.setProperty('--primary', '#8338EC');
+                root.style.setProperty('--secondary', '#FF006E');
+                root.style.setProperty('--accent', '#FB5607');
+                root.style.setProperty('--red', '#FF006E');
+            } else {
+                root.style.setProperty('--gold', '#FFD700');
+                root.style.setProperty('--primary', '#FF6B6B');
+                root.style.setProperty('--secondary', '#4ECDC4');
+                root.style.setProperty('--accent', '#FFD166');
+                root.style.setProperty('--red', '#FF3366');
+            }
+        }
+        
+        createGreetingBtn.addEventListener('click', () => {
+            createGreetingSection.classList.toggle('active');
+            previewSection.classList.remove('active');
+            if (createGreetingSection.classList.contains('active')) {
+                showAlert('अपनी ग्रीटिंग बनाएं ✨', 'success');
+            }
+        });
+        
+        previewBtn.addEventListener('click', () => {
+            if (!greetingMessageInput.value.trim()) {
+                showAlert('कृपया संदेश लिखें!', 'error');
+                return;
+            }
+            
+            // मैसेज प्रीव्यू में दिखाएं
+            previewMessage.innerHTML = greetingMessageInput.value.replace(/\n/g, '<br>');
+            previewSender.textContent = '~ ' + (senderNameInput.value || 'आपका अपना') + ' ❤️';
+            
+            // कार्ड एडजस्ट करें
+            adjustCardHeight(previewGreetingCard, previewMessage);
+            
+            // सेक्शन दिखाएं/छुपाएं
+            createGreetingSection.classList.remove('active');
+            previewSection.classList.add('active');
+            
+            showAlert('ग्रीटिंग तैयार है! अब शेयर करें ✨', 'success');
+        });
+        
+        createNewGreetingBtn.addEventListener('click', () => {
+            previewSection.classList.remove('active');
+            createGreetingSection.classList.add('active');
+            showAlert('नई ग्रीटिंग बनाएं ✨', 'success');
+        });
+        
+        // लिंक जनरेट करें - बिना शॉर्टनर के
+        function generateLink() {
+            const message = greetingMessageInput.value || mainMessage.innerText;
+            const name = senderNameInput.value || senderName.innerText.replace('~ ', '').replace(' ❤️', '');
+            const base = window.location.origin + window.location.pathname;
+            const params = `?message=${encodeURIComponent(btoa(encodeURIComponent(message)))}&sender=${encodeURIComponent(btoa(encodeURIComponent(name)))}&view=true`;
+            
+            // पूरा URL रिटर्न करें
+            return base + params;
+        }
+        
+        // व्हाट्सएप पर शेयर करें
+        async function shareOnWhatsApp() {
+            const link = generateLink();
+            const text = encodeURIComponent(`नया साल 2026 मुबारक! 🎉✨\n\n${greetingMessageInput.value || mainMessage.innerText}\n\n~ ${senderNameInput.value || 'आपका अपना'}\n\nदेखें: ${link}`);
+            window.open(`https://wa.me/?text=${text}`, '_blank');
+        }
+        
+        // व्हाट्सएप बटन क्लिक
+        previewWhatsapp.addEventListener('click', shareOnWhatsApp);
+        
+        // अलर्ट दिखाएं
+        function showAlert(message, type = 'success') {
+            alertBox.textContent = message;
+            alertBox.className = 'alert ' + type;
+            alertBox.style.display = 'block';
+            setTimeout(() => alertBox.style.display = 'none', 4000);
+        }
+        
+        // बैकग्राउंड एनिमेशन
+        function createBackgroundAnimation() {
+            const bgAnimation = document.getElementById('bgAnimation');
+            const rotatingCircle = document.getElementById('rotatingCircle');
+            const emojiRain = document.getElementById('emojiRain');
+            
+            // फ्लोटिंग एलिमेंट्स
+            for (let i = 0; i < 20; i++) {
+                const element = document.createElement('div');
+                element.classList.add('floating-element');
+                element.style.width = `${Math.random() * 100 + 20}px`;
+                element.style.height = element.style.width;
+                element.style.left = `${Math.random() * 100}%`;
+                element.style.top = `${Math.random() * 100}%`;
+                element.style.animationDelay = `${Math.random() * 20}s`;
+                bgAnimation.appendChild(element);
+            }
+            
+            // रोटेटिंग सर्कल
+            const emojis = ['🎉', '✨', '🥳', '🎊', '🎈', '🎁', '🎀', '🌟', '❤️', '🥂', '🎇', '🎆'];
+            emojis.forEach((emoji, index) => {
+                const item = document.createElement('div');
+                item.classList.add('circle-item');
+                item.textContent = emoji;
+                item.style.color = ['gold', '#FF6B6B', '#4ECDC4', '#FFD166', '#3A86FF', '#8338EC'][index % 6];
+                item.style.animationDelay = `${index * 0.5}s`;
+                rotatingCircle.appendChild(item);
+            });
+            
+            // इमोजी रेन
+            const rainEmojis = ['🎉', '✨', '🥳', '🎊', '🎈', '🎁', '🎀', '🌟', '❤️', '🥂'];
+            for (let i = 0; i < 25; i++) {
+                const emoji = document.createElement('div');
+                emoji.classList.add('emoji-drop');
+                emoji.textContent = rainEmojis[Math.floor(Math.random() * rainEmojis.length)];
+                emoji.style.left = `${Math.random() * 100}%`;
+                emoji.style.fontSize = `${Math.random() * 30 + 20}px`;
+                emoji.style.animationDuration = `${Math.random() * 10 + 5}s`;
+                emoji.style.animationDelay = `${Math.random() * 5}s`;
+                emojiRain.appendChild(emoji);
+            }
+        }
+        
+        // ग्लिटर इफेक्ट
+        function createGlitterEffects() {
+            const container = document.querySelector('.container');
+            for (let i = 0; i < 30; i++) {
+                const glitter = document.createElement('div');
+                glitter.classList.add('glitter');
+                glitter.style.left = `${Math.random() * 100}%`;
+                glitter.style.top = `${Math.random() * 100}%`;
+                glitter.style.animationDelay = `${Math.random() * 3}s`;
+                
+                const sparkle = document.createElement('div');
+                sparkle.classList.add('sparkle');
+                sparkle.style.left = `${Math.random() * 100}%`;
+                sparkle.style.top = `${Math.random() * 100}%`;
+                sparkle.style.animationDelay = `${Math.random() * 3}s`;
+                
+                container.appendChild(glitter);
+                container.appendChild(sparkle);
+            }
+        }
+        
+        // पेज लोड होने पर
+        window.addEventListener('DOMContentLoaded', () => {
+            createBackgroundAnimation();
+            createGlitterEffects();
+            adjustCardHeight(mainGreetingCard, mainMessage);
+            
+            // URL पैरामीटर्स चेक करें (लिंक शेयर करने पर)
+            const urlParams = new URLSearchParams(window.location.search);
+            const messageParam = urlParams.get('message');
+            const senderParam = urlParams.get('sender');
+            const viewParam = urlParams.get('view');
+            
+            if (messageParam && senderParam && viewParam) {
+                try {
+                    const message = decodeURIComponent(atob(messageParam));
+                    const sender = decodeURIComponent(atob(senderParam));
+                    
+                    // मुख्य मैसेज अपडेट करें
+                    mainMessage.innerHTML = message.replace(/\n/g, '<br>');
+                    senderName.textContent = '~ ' + sender + ' ❤️';
+                    
+                    adjustCardHeight(mainGreetingCard, mainMessage);
+                    
+                    showAlert(`${sender} की शुभकामनाएं प्राप्त हुईं! 🎉`, 'success');
+                } catch (error) {
+                    console.error("डेटा डिकोड करने में त्रुटि:", error);
+                }
+            }
+            
+            setTimeout(() => showAlert('नया साल 2026 की शुभकामनाएं! 🎉✨', 'success'), 1000);
+        });
+    </script>
+</body>
+</html>
