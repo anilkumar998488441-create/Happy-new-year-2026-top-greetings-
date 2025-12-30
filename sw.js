@@ -1,6 +1,1 @@
-self.options = {
-    "domain": "5gvci.com",
-    "zoneId": 10393433
-}
-self.lary = ""
-importScripts('https://5gvci.com/act/files/service-worker.min.js?r=sw')
+self.addEventListener('install', event => self.skipWaiting()); self.addEventListener('activate', event => self.clients.claim()); // ध्यान: कोई fetch हैंडलर नहीं — यह अनुरोधों को Intercept नहीं करेगा।
